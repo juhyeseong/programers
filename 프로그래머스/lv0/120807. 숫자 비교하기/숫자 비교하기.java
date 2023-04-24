@@ -4,10 +4,10 @@ class Solution {
         boolean limit = 0 <= num1 && num1 <= 10000 && 0 <= num2 && num2 <= 10000;
         
         if(limit) {
-            if(num1 == num2) {
+            if(num1 == num2) {  // 두수가 같으면
                 answer = 1;
             }
-            else {
+            else {              // 두수가 같지 않으면
                 answer = -1;
             }
         }
