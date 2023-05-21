@@ -31,7 +31,7 @@ class Solution {
         }
         
         String[] answer = new String[list.size()];          // 배열의 크기를 list의 크기로 지정해주고
-        list.toArray(answer);                               // list의 정보를 answer에 담아서 반환
+        list.toArray(answer);                               // list의 정보를 answer에 담아서 반환한다
         
         return answer;
     }
