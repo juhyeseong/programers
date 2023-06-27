@@ -1,17 +1,9 @@
 class Solution {
     public int[] solution(String[] strlist) {
-        int[] answer = new int[strlist.length];
-        boolean limit = false;
+        int[] answer = new int[strlist.length];         // strlist의 윈소의 길이를 담는 배열이기 때문에 strlist와 크기가 같다
         
-        for(int j = 0; j < strlist.length; j++) {
-        	limit = 1 <= strlist[j].length() && strlist[j].length() <= 100;
-        	for(int i = 0; i < strlist.length; i++) {
-        		if(answer[i] == 0 && limit) {
-        			answer[i] = strlist[j].length();
-        			break;
-        		}
-        	}
-        	
+        for(int i = 0; i < strlist.length; i++) {       // strlist의
+        	answer[i] = strlist[i].length();            // i번째 원소의 길이를 answer의 i번째에 대입
         }
         
         return answer;
